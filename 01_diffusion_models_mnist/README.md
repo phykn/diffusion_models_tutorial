@@ -2,4 +2,4 @@
 
 
 ## References
-- https://github.com/TeaPearce/Conditional_Diffusion_MNIST
+1. https://github.com/TeaPearce/Conditional_Diffusion_MNIST
