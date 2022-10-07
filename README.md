@@ -3,5 +3,4 @@ This page is for studying diffusion models. Diffusion models are one of generati
 1. MNIST Example
 
 ## References
-1. Generative Modeling by Estimating Gradients of the Data Distribution[https://yang-song.net/blog/2021/score/] (Yang Song, 2021)
-1. https://yang-song.net/blog/2021/score/
+1. [Generative Modeling by Estimating Gradients of the Data Distribution](https://yang-song.net/blog/2021/score) (Yang Song, 2021)
