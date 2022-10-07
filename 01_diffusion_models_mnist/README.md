@@ -32,4 +32,4 @@ print(x_store.shape)
 ## References
 1. https://github.com/TeaPearce/Conditional_Diffusion_MNIST
 2. https://github.com/cloneofsimo/minDiffusion
-3. [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) (2020)
+3. [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239), Jonathan Ho, Ajay Jain, Pieter Abbeel, 2020
