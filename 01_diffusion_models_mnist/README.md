@@ -8,13 +8,13 @@ python train.py
 
 ## Inference
 ```python
-ddpm = DDPM(n_T=400, ...) # n_T is the number of timesteps
+ddpm = DDPM(n_T=400, ...)   # n_T is the number of timesteps
 
 x, x_store = ddpm.sample(
-  n_sample=10,      # number of samples
-  size=(1, 28, 28), # image shape
-  n_classes=10,     # number of classes
-  guide_w=0.0       # guide weight
+  n_sample=10,              # number of samples
+  size=(1, 28, 28),         # image shape
+  n_classes=10,             # number of classes
+  guide_w=0.0               # guide weight
 )
 
 print(x.shape)
