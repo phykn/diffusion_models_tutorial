@@ -1,2 +1,1 @@
-# diffusion_model_tutorial
-Tutorial on diffusion model
+# Tutorial on Diffusion Model
