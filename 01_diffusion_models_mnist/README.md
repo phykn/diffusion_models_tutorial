@@ -3,8 +3,8 @@ This repository is an example of a small diffusion models for MNIST dataset. It 
 
 ## Inference
 <figure><img src="images/guide_000.gif"></figure>
-
-
+<figure><img src="images/guide_050.gif"></figure>
+<figure><img src="images/guide_200.gif"></figure>
 
 ## References
 1. https://github.com/TeaPearce/Conditional_Diffusion_MNIST
