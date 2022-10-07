@@ -1,7 +1,7 @@
 ## MNIST Example for Diffusion models
 This repository is an example of a small diffusion models for MNIST dataset. It uses a small U-Net architecture. Most codes are just copy and paste from [1]. I made a small correction in the original code for convenience.
 
-## Train
+## Train model
 ```python
 python train.py
 ```
