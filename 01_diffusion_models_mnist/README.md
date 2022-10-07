@@ -24,6 +24,7 @@ print(x_store.shape)
 >>> (400, 10, 1, 28, 28)
 ```
 
+## Visualization
 <figure><img src="images/guide_000.gif"></figure>
 <figure><img src="images/guide_050.gif"></figure>
 <figure><img src="images/guide_200.gif"></figure>
