@@ -34,4 +34,4 @@ print(x_store.shape)
 2. https://github.com/cloneofsimo/minDiffusion
 3. [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239), Jonathan Ho, Ajay Jain, Pieter Abbeel, 2020
 4. [Classifier-Free Diffusion Guidance](https://arxiv.org/abs/2207.12598), Jonathan Ho, Tim Salimans, 2022
-5. [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](https://arxiv.org/abs/2205.11487) Chitwan Saharia, et al. 2022
+5. [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](https://arxiv.org/abs/2205.11487) Chitwan Saharia, et al., 2022
