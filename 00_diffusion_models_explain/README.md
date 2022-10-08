@@ -1,19 +1,11 @@
-$$ cos^2 \theta + sin^2 \theta  = 1  $$
- 
-$$ tan 2 \theta = {2tan \theta  \over 1 - tan^2 \theta}  $$
+Evaluate $\int_1^2 (x + 4)^2 dx $
  
 $$\eqalign{
-cos 2 \theta = cos^2 \theta - sin^2 \theta \\
-                       &=  2 cos^2  \theta -1 \\
-                       &= 1 - 2sin^2 \theta
+\int_1^2 (x + 4)^2 dx = \int_1^2 (x^2 + 8x + 16) dx \\
+  &= \left\lbrack {x^3 \over 3} + {8x^2 \over 2} + 16x \right\rbrack_1^2 \\
+  &= \left\lbrack {8 \over 3} + {8 * 4 \over 2} + 16 * 2 \right\rbrack
+   - \left\lbrack {1 \over 3} + {8 \over 2}  + 16  \right\rbrack
 }$$
- 
-Prove $ \sqrt{ 1 - cos^2 \theta \over 1- sin^2 \theta} = tan \theta $
- 
-$$ \sqrt{ 1 - cos^2 \theta \over 1- sin^2 \theta} 
-= \sqrt{ sin^2 \theta \over cos^2 \theta} 
-= {sin \theta \over cos \theta} = Tan \theta
-$$
 
 ## Review: Expectation and Variance
 
