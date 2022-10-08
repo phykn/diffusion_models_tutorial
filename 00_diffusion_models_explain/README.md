@@ -9,7 +9,7 @@ The expectation of a random variable $X$ is defined as
 E[X] &= x_{1}p_{1} + x_{2}p_{2} + ... + x_{n}p_{n} \\
 &= \sum_{i=1}^{n} x_{i}p_{i}
 \end{aligned}  
-where $x_{i}$ and $p_{i}$ are $i$th a possible outcome and its probability, respectively.
+where $x_{i}$ and $p_{i}$ are $i$ th a possible outcome and its probability, respectively.
 
 ### Properties
 1. $E[aX]=aE[X]$ where $a$ is a constant value.  
