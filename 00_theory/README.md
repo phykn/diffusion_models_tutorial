@@ -2,6 +2,7 @@
 
 ## Table of contents
 1. [Review: Expectation and Variance](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/01_review.ipynb)
+2. Reparameterization Trick
 
 ## References
 1. [Diffusion models explained. How does OpenAI's GLIDE work?](https://youtu.be/344w5h24-h8) (
