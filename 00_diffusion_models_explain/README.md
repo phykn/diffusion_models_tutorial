@@ -1,6 +1,8 @@
-<script type="text/javascript" 
-src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
-</script>
+**Here is some math!**
+
+```math
+\sqrt{3}
+```
 
 ## Review: Expectation and Variance
 
