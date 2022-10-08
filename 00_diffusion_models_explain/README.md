@@ -1,28 +1,19 @@
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+$$ cos^2 \theta + sin^2 \theta  = 1  $$
  
-$(a+b)^2$
- 
-$$\eqalign{
-(a+b)^2 &= (a+b)(a+b) \\
-        &= a^2 + ab + ba + b^2 \\
-        &= a^2 + 2ab + b^2
-}$$
- 
-$(a-b)^2$
+$$ tan 2 \theta = {2tan \theta  \over 1 - tan^2 \theta}  $$
  
 $$\eqalign{
-(a-b)^2 &= (a-b)(a-b) \\
-        &= a^2 - ab - ba + b^2 \\
-        &= a^2 - 2ab + b^2
+cos 2 \theta = cos^2 \theta - sin^2 \theta \\
+                       &=  2 cos^2  \theta -1 \\
+                       &= 1 - 2sin^2 \theta
 }$$
  
-$(a-b)(a+b)$
+Prove $ \sqrt{ 1 - cos^2 \theta \over 1- sin^2 \theta} = tan \theta $
  
-$$\eqalign{
-(a+b)(a-b)  &= a^2 - ab + ba - b^2 \\
-        &= a^2 - b^2
-}$$
-
+$$ \sqrt{ 1 - cos^2 \theta \over 1- sin^2 \theta} 
+= \sqrt{ sin^2 \theta \over cos^2 \theta} 
+= {sin \theta \over cos \theta} = Tan \theta
+$$
 
 ## Review: Expectation and Variance
 
