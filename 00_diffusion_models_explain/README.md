@@ -6,7 +6,7 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
 In probability theory, expectation (also called expected value, mean, average) is a generalization of the weighted average.
 
 ### Definition
-The expectation of a random variable $X$ is defined as  
+The expectation of a random variable $X$ is defined as
 $$ E[X] = x_{1}p_{1} + x_{2}p_{2} + ... + x_{n}p_{n} $$
 where $x_{i}$ and $p_{i}$ are $i$ th a possible outcome and its probability, respectively.
 
