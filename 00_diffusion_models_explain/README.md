@@ -1,3 +1,6 @@
+## Table of contents
+1. [Review: Expectation and Variance](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_diffusion_models_explain/01_review.ipynb)
+
 ## References
 1. [Diffusion models explained. How does OpenAI's GLIDE work?](https://youtu.be/344w5h24-h8) (
 AI Coffee Break with Letitia, 2022)
