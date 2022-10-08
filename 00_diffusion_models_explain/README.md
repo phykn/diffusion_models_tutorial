@@ -1,3 +1,50 @@
+## Review: Expectation and Variance
+
+### Expectation
+In probability theory, expectation (also called expected value, mean, average) is a generalization of the weighted average.
+
+### Definition
+The expectation of a random variable $X$ is defined as
+$$
+\begin{aligned}
+E[X] &= x_{1}p_{1} + x_{2}p_{2} + ... + x_{n}p_{n} \\
+&= \sum_{i=1}^{n} x_{i}p_{i}
+\end{aligned}
+$$
+where $x_{i}$ and $p_{i}$ are $i$th a possible outcome and its probability, respectively.
+
+### Properties
+1. $E[aX]=aE[X]$ where $a$ is a constant value.
+   $$
+   \begin{aligned}
+   E[aX] &= \sum_{i=1}^{n} ax_{i}p_{i} \\
+   &= a  \sum_{i=1}^{n} x_{i}p_{i} \\
+   &= a  E[X]
+   \end{aligned}
+   $$
+
+2. $E[X+b]=E[X]+b$ where $b$ is a constant value.
+   $$
+   \begin{aligned}
+   E[X+b] &= \sum_{i=1}^{n} (x_{i}+b)p_{i} \\
+   &= \sum_{i=1}^{n} (x_{i}p_{i}+bp_{i}) \\
+   &= \sum_{i=1}^{n} x_{i}p_{i} + \sum_{i=1}^{n} bp_{i} \\
+   &= E[X] + b \sum_{i=1}^{n} p_{i} \\
+   &= E[X] + b
+   \end{aligned}
+   $$ 
+   We used the property that sum of all probability is equal to 1 $(\sum_{i=1}^{n} p_{i}=1)$.
+
+3. $E[X+Y]=E[X]+E[Y]$  
+   $$
+   \begin{aligned}
+   E[X+Y] &= \sum_{i=1}^{n} (x_{i} + y_{i})p_{i} \\
+   &= \sum_{i=1}^{n} (x_{i}p_{i} + y_{i}p_{i}) \\
+   &= \sum_{i=1}^{n} x_{i}p_{i} + \sum_{i=1}^{n}y_{i}p_{i} \\
+   &= E[X] + E[Y]
+   \end{aligned}
+   $$
+
 ## References
 1. [Diffusion models explained. How does OpenAI's GLIDE work?](https://youtu.be/344w5h24-h8) (
 AI Coffee Break with Letitia, 2022)
