@@ -5,7 +5,9 @@ In probability theory, expectation (also called expected value, mean, average) i
 
 ### Definition
 The expectation of a random variable $X$ is defined as
-$$\begin{aligned}E[X] = x_{1}p_{1} + x_{2}p_{2} + ... + x_{n}p_{n} = \sum_{i=1}^{n} x_{i}p_{i}\end{aligned}$$
+$$\begin{aligned}
+E[X] = x_{1}p_{1} + x_{2}p_{2} + ... + x_{n}p_{n} = \sum_{i=1}^{n} x_{i}p_{i}
+\end{aligned}$$
 where $x_{i}$ and $p_{i}$ are $i$ th a possible outcome and its probability, respectively.
 
 ### Properties
