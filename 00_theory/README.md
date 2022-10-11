@@ -11,7 +11,6 @@
 1. [Jensen's inequality](https://en.wikipedia.org/wiki/Jensen%27s_inequality) (Wikipedia)
 1. [Kullback–Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) (Wikipedia)
 1. [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem) (Wikipedia)
-
 1. [공돌이의 수학정리노트](https://angeloyeo.github.io)
 1. [Matthew N. Bernstein](https://mbernste.github.io)
 1. [Generative Modeling by Estimating Gradients of the Data Distribution](https://yang-song.net/blog/2021/score) (Yang Song, 2021)
