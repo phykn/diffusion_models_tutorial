@@ -1,7 +1,7 @@
 ## What are Diffusion Models?
 
 ## Table of contents
-1. [Review: Expectation and Variance](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/01_review.ipynb)
+1. [Expectation and Variance](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/01_expectation_and_variance.ipynb)
 2. [Reparameterization](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/02_reparameterization.ipynb)
 
 ## References
