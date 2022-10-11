@@ -5,8 +5,8 @@
 2. [Reparameterization](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/02_reparameterization.ipynb)
 
 ## References
-1. [Jensen's inequality](https://en.wikipedia.org/wiki/Jensen%27s_inequality) (Wikipedia)
-1. [Kullback–Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) (Wikipedia)
+0. [Jensen's inequality](https://en.wikipedia.org/wiki/Jensen%27s_inequality) (Wikipedia)
+0. [Kullback–Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) (Wikipedia)
 1. [Expected value](https://en.wikipedia.org/wiki/Expected_value) (Wikipedia)
 1. [Variance](https://en.wikipedia.org/wiki/Variance) (Wikipedia)
 1. [Generative Modeling by Estimating Gradients of the Data Distribution](https://yang-song.net/blog/2021/score) (Yang Song, 2021)
