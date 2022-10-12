@@ -2,7 +2,7 @@
 Diffusion models are inspired by non-equilibrium thermodynamics. They are type of deep generative models which consist of forward and reverse processes.
 
 ### Forward process
-We add small gaussian noise to the input image step by step and make an isotropic Gaussian distribution. We learn a model that converts to the gaussian distribution at any t step in the training phase.
+We add small gaussian noise to the input data step by step and make an isotropic Gaussian distribution. We learn a model that converts to the gaussian distribution at any t step in the training phase.
 | <img src="images/forward.gif"> | 
 |:---:|
 |Example of the forward process|
