@@ -13,6 +13,8 @@ We recreate the true sample from a gaussian noise. It is the reverse of the forw
 |:---:|
 |Example of the reverse process|
 
+Please refer to the document below for detailed descriptions for the diffusion models.
+
 
 ## Table of contents
 1. [Expectation and Variance](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/01_expectation_and_variance.ipynb)
