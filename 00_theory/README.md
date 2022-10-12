@@ -1,10 +1,25 @@
 ## What are Diffusion Models?
+Diffusion models are inspired by non-equilibrium thermodynamics. They are type of deep generative models which consist of forward and reverse processes.
+
+### Forward process
+We add small gaussian noise to the input image step by step and make an isotropic Gaussian distribution. We learn a model that converts to the gaussian distribution at any t step in the training phase.
+| <img src="images/forward.gif"> | 
+|:---:|
+|Example of the forward process|
+
+### Reverse process
+We recreate the true sample from a gaussian noise. It is the reverse of the forward process.
+| <img src="images/reverse.gif"> | 
+|:---:|
+|Example of the reverse process|
+
 
 ## Table of contents
 1. [Expectation and Variance](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/01_expectation_and_variance.ipynb)
 1. [Reparameterization](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/02_reparameterization.ipynb)
 1. [KL Divergence](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/03_kl_divergence.ipynb)
 1. [Evidence lower bound (ELBO)](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/04_elbo.ipynb)
+
 
 ## References
 1. [Expected value](https://en.wikipedia.org/wiki/Expected_value) (Wikipedia)
