@@ -21,6 +21,7 @@ Please refer to the document below for detailed descriptions for the diffusion m
 1. [Reparameterization](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/02_reparameterization.ipynb)
 1. [KL Divergence](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/03_kl_divergence.ipynb)
 1. [Evidence lower bound (ELBO)](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/04_elbo.ipynb)
+1. [Forward and Reverse process](https://github.com/phykn/diffusion_models_tutorial/blob/main/00_theory/05_forward_and_reverse.ipynb)
 
 
 ## References
