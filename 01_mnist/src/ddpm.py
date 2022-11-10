@@ -1,18 +1,10 @@
 import numpy as np
 import torch
 import torch.nn as nn
-from typing import Tuple, Dict
 from tqdm import tqdm
 
-
-def ddpm_schedules(
-    beta1: float, 
-    beta2: float, 
-    T: int
-) -> Dict[str, torch.Tensor]:
-    """
-    Returns pre-computed schedules for DDPM sampling, training process.
-    """
+def ddpm_schedules(beta1, beta2, T):
+    """Returns pre-computed schedules for DDPM sampling, training process"""
     assert beta1 < beta2 < 1.0, "beta1 and beta2 must be in (0, 1)"
 
     # linear function from beta1 to beta2 in timestep T
@@ -39,15 +31,8 @@ def ddpm_schedules(
         "mab_over_sqrtmab": mab_over_sqrtmab_inv,  # (1-\alpha_t)/\sqrt{1-\bar{\alpha_t}}
     }
 
-
 class DDPM(nn.Module):
-    def __init__(
-        self, 
-        model: nn.Module, 
-        betas: Tuple[float], 
-        n_T: int, 
-        drop_prob: float=0.1
-    ) -> None:
+    def __init__(self, model, betas, n_T, drop_prob=0.1):
         super().__init__()
         self.model = model
         self.device = next(model.parameters()).device
@@ -61,14 +46,8 @@ class DDPM(nn.Module):
         self.drop_prob = drop_prob
         self.loss_mse = nn.MSELoss()
 
-    def forward(
-        self, 
-        x: torch.Tensor, 
-        c: torch.Tensor
-    ) -> torch.Tensor:
-        """
-        this method is used in training, so samples t and noise randomly
-        """
+    def forward(self, x, c):
+        """this method is used in training, so samples t and noise randomly"""
 
         _ts = torch.randint(1, self.n_T, (x.size(0),)).to(self.device)  # t ~ Uniform(0, n_T)
         noise = torch.randn_like(x)  # eps ~ N(0, 1)
@@ -84,13 +63,7 @@ class DDPM(nn.Module):
         return self.loss_mse(noise, self.model(x_t, c, _ts/self.n_T, context_mask))
 
     @torch.no_grad()
-    def sample(
-        self, 
-        n_sample: int,
-        size: Tuple[int],
-        n_classes: int=10, 
-        guide_w: float=0.0
-    ) -> Tuple[torch.Tensor, np.ndarray]:
+    def sample(self, n_sample, size, n_classes=10, guide_w=0.0):
         # we follow the guidance sampling scheme described in 'Classifier-Free Diffusion Guidance'
         # to make the fwd passes efficient, we concat two versions of the dataset,
         # one with context_mask=0 and the other context_mask=1

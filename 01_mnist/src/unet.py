@@ -1,18 +1,10 @@
 import torch
 import torch.nn as nn
 
-
 class ResidualConvBlock(nn.Module):
-    def __init__(
-        self, 
-        in_channels: int, 
-        out_channels: int, 
-        is_res: bool=False
-    ) -> None:
+    def __init__(self, in_channels, out_channels, is_res=False):
         super().__init__()
-        '''
-        standard ResNet style convolutional block
-        '''
+        """standard ResNet style convolutional block"""
         self.same_channels = in_channels==out_channels
         self.is_res = is_res
         self.conv1 = nn.Sequential(
@@ -26,14 +18,10 @@ class ResidualConvBlock(nn.Module):
             nn.GELU(),
         )
 
-    def forward(
-        self, 
-        x: torch.Tensor
-    ) -> torch.Tensor:
+    def forward(self, x):
         if self.is_res:
             x1 = self.conv1(x)
             x2 = self.conv2(x1)
-            # this adds on correct residual in case channels have increased
             if self.same_channels:
                 out = x + x2
             else:
@@ -44,89 +32,49 @@ class ResidualConvBlock(nn.Module):
             x2 = self.conv2(x1)
             return x2
 
-
 class UnetDown(nn.Module):
-    def __init__(
-        self, 
-        in_channels: int, 
-        out_channels: int
-    ) -> None:
+    def __init__(self, in_channels, out_channels):
         super().__init__()
-        '''
-        process and downscale the image feature maps
-        '''
-        layers = [
-            ResidualConvBlock(in_channels, out_channels), 
+        """process and downscale the image feature maps"""
+        self.down = nn.Sequential(
+            ResidualConvBlock(in_channels, out_channels),
             nn.MaxPool2d(2)
-        ]
-        self.model = nn.Sequential(*layers)
+        )
 
-    def forward(
-        self, 
-        x: torch.Tensor
-    ) -> torch.Tensor:
-        return self.model(x)
-
+    def forward(self, x):
+        return self.down(x)
 
 class UnetUp(nn.Module):
-    def __init__(
-        self, 
-        in_channels: int, 
-        out_channels: int
-    ) -> None:
+    def __init__(self, in_channels, out_channels):
         super().__init__()
-        '''
-        process and upscale the image feature maps
-        '''
-        layers = [
+        """process and upscale the image feature maps"""
+        self.up = nn.Sequential(
             nn.ConvTranspose2d(in_channels, out_channels, 2, 2),
             ResidualConvBlock(out_channels, out_channels)
-        ]
-        self.model = nn.Sequential(*layers)
+        )
 
-    def forward(
-        self, 
-        x: torch.Tensor, 
-        skip: torch.Tensor
-    ) -> torch.Tensor:
+    def forward(self, x, skip):
         x = torch.cat([x, skip], 1)
-        x = self.model(x)
+        x = self.up(x)
         return x
 
-
 class EmbedFC(nn.Module):
-    def __init__(
-        self, 
-        input_dim: int, 
-        emb_dim: int
-    ) -> None:
+    def __init__(self, input_dim, emb_dim):
         super().__init__()
-        '''
-        generic one layer FC NN for embedding things  
-        '''
+        """generic one layer FC NN for embedding things"""
         self.input_dim = input_dim
-        layers = [
+        self.model = nn.Sequential(
             nn.Linear(input_dim, emb_dim),
             nn.GELU(),
-            nn.Linear(emb_dim, emb_dim),
-        ]
-        self.model = nn.Sequential(*layers)
+            nn.Linear(emb_dim, emb_dim)
+        )
 
-    def forward(
-        self, 
-        x: torch.Tensor
-    ) -> torch.Tensor:
+    def forward(self, x):
         x = x.view(-1, self.input_dim)
         return self.model(x)
 
-
 class ContextUnet(nn.Module):
-    def __init__(
-        self, 
-        in_channels: int, 
-        n_feat: int=256, 
-        n_classes: int=10
-    ) -> None:
+    def __init__(self, in_channels, n_feat=256, n_classes=10):
         super().__init__()
 
         self.in_channels = in_channels
@@ -158,18 +106,10 @@ class ContextUnet(nn.Module):
             nn.Conv2d(n_feat, self.in_channels, 3, 1, 1),
         )
 
-    def forward(
-        self, 
-        x: torch.Tensor, 
-        c: torch.Tensor, 
-        t: torch.Tensor, 
-        context_mask: torch.Tensor
-    ) -> torch.Tensor:
+    def forward(self, x, c, t, context_mask):
         # x is (noisy) image, c is context label, t is timestep, 
         # context_mask says which samples to block the context on
-
         x = self.init_conv(x)
-
         down1 = self.down1(x)
         down2 = self.down2(down1)
         hiddenvec = self.to_vec(down2)

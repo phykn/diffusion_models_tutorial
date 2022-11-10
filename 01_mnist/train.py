@@ -15,7 +15,6 @@ This technique also features in ImageGen 'Photorealistic Text-to-Image Diffusion
 https://arxiv.org/abs/2205.11487
 '''
 
-
 import os
 import torch
 from typing import Tuple
@@ -26,7 +25,6 @@ from torchvision import transforms
 from torch.utils.data import DataLoader
 from src.unet import ContextUnet
 from src.ddpm import DDPM
-
 
 @dataclass
 class set_args:
@@ -121,7 +119,6 @@ def main(args):
             path = os.path.join(args.save_dir, f"model_{ep:03d}.pth")
             torch.save(ddpm.state_dict(), path)
             print(f"saved model at {path}")
-
 
 if __name__ == "__main__":
     args = set_args()
