@@ -5,7 +5,10 @@ Diffusion models are generative models which have recently been shown to produce
 ||Title|LINK|Update|
 |---|---|---|---|
 |01|Expectation and variable|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/01_expectation_and_variance.ipynb)|22.12.14|
-|01|Reparameterization trick|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/02_reparameterization.ipynb)|22.12.14|
+|02|Reparameterization trick|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/02_reparameterization.ipynb)|22.12.14|
+|03|Kullback–Leibler divergence|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/03_kl_divergence.ipynb)|22.12.14|
+|04|Evidence lower bound|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/04_elbo.ipynb)|22.12.14|
+|05|Forward and reverse process|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/05_forward_and_reverse.ipynb)|22.12.14|
 
 ## References
 1. [Expected value](https://en.wikipedia.org/wiki/Expected_value) (Wikipedia)
