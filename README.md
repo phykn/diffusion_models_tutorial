@@ -4,7 +4,7 @@ Diffusion models are generative models which have recently been shown to produce
 ## Table of contents
 ||Title|LINK|Update|
 |---|---|---|---|
-|01|Expectation and Variable|[LINK](https://github.com/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/01-Introduction-To-Causality.ipynb)|22.12.14|
+|01|Expectation and Variable|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/01_expectation_and_variance.ipynb)|22.12.14|
 
 ## References
 1. [Expected value](https://en.wikipedia.org/wiki/Expected_value) (Wikipedia)
