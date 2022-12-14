@@ -9,6 +9,7 @@ Diffusion models are generative models which have recently been shown to produce
 |03|Kullback–Leibler divergence|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/03_kl_divergence.ipynb)|22.12.14|
 |04|Evidence lower bound|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/04_elbo.ipynb)|22.12.14|
 |05|Forward and reverse process|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/05_forward_and_reverse.ipynb)|22.12.14|
+|06|Scheduler|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/06_scheduler.ipynb)|22.12.14|
 
 ## References
 1. [Expected value](https://en.wikipedia.org/wiki/Expected_value) (Wikipedia)
@@ -29,6 +30,7 @@ AI Coffee Break with Letitia, 2022)
 1. [Diffusion models from scratch in PyTorch](https://youtu.be/a4Yfz2FxXiY) (DeepFindr, 2022)
 1. [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) (Jonathan Ho, Ajay Jain, Pieter Abbeel, 2020)
 1. [Diffusion Models Beat GANs on Image Synthesis](https://arxiv.org/abs/2105.05233) (Prafulla Dhariwal, Alex Nichol, 2021)
+1. [Improved Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2102.09672) (Alex Nichol, Prafulla Dhariwal, 2021)
 1. [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796) (Ling Yang, et al., 2022)
 1. [Diffusion Models in Vision: A Survey](https://arxiv.org/abs/2209.04747) (Florinel-Alin Croitoru, et al., 2022)
 1. [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796) (Ling Yang, et al., 2022)
