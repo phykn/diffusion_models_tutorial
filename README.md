@@ -9,7 +9,7 @@ Diffusion models are generative models which have recently been shown to produce
 |03|Kullback–Leibler divergence|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/03_kl_divergence.ipynb)|22.12.14|
 |04|Evidence lower bound|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/04_elbo.ipynb)|22.12.14|
 |05|Forward and reverse process|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/05_forward_and_reverse.ipynb)|22.12.14|
-|06|Scheduler|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/06_noise_schedule.ipynb)|22.12.14|
+|06|Noise schedule|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/06_noise_schedule.ipynb)|22.12.14|
 
 ## References
 1. [Expected value](https://en.wikipedia.org/wiki/Expected_value) (Wikipedia)
