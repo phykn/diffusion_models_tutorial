@@ -39,8 +39,7 @@ def main(args):
     # dataloader
     transform = transforms.Compose([
         transforms.Resize(args.image_size),
-        transforms.ToTensor(),
-        # transforms.Lambda(lambda t: (t * 2) - 1)
+        transforms.ToTensor()
     ])
     dataset = MNIST(args.data_dir, train=True, download=True, transform=transform)
     dataloader = DataLoader(
