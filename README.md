@@ -4,7 +4,7 @@ Diffusion models are generative models which have recently been shown to produce
 ## Table of contents
 ||Title|LINK|Update|
 |---|---|---|---|
-|01|Expectation and variable|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/01_expectation_and_variance.ipynb)|22.12.14|
+|01|Expectation and variance|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/01_expectation_and_variance.ipynb)|22.12.14|
 |02|Reparameterization trick|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/02_reparameterization_trick.ipynb)|22.12.14|
 |03|Kullback–Leibler divergence|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/03_kl_divergence.ipynb)|22.12.14|
 |04|Evidence lower bound|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/04_elbo.ipynb)|22.12.14|
