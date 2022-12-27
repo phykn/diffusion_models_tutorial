@@ -17,7 +17,7 @@ class set_args:
     channels: int=1
     self_condition: bool=False
     resnet_block_groups: int=4
-    steps: int=1000
+    steps: int=4000
     device: str="cuda"
 
     image_size: int=32

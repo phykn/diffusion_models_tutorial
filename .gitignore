@@ -31,3 +31,8 @@
 01_example/ddpm/weight/model_017.pth
 01_example/ddpm/weight/model_018.pth
 01_example/ddpm/weight/model_019.pth
+01_example/ddim/weight.pth
+01_example/ddim/src/__pycache__/__init__.cpython-38.pyc
+01_example/ddim/src/__pycache__/ddim.cpython-38.pyc
+01_example/ddim/src/__pycache__/schedule.cpython-38.pyc
+01_example/ddim/src/__pycache__/unet.cpython-38.pyc
