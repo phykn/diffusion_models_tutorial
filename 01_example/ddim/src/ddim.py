@@ -18,7 +18,13 @@ class DDIM(nn.Module):
     ):
         super().__init__()
         self.unet = Unet(
-            dim, init_dim, out_dim, dim_mults, channels, self_condition, resnet_block_groups
+            dim=dim, 
+            init_dim=init_dim, 
+            out_dim=out_dim, 
+            dim_mults=dim_mults, 
+            channels=channels, 
+            self_condition=self_condition, 
+            resnet_block_groups=resnet_block_groups
         )
         self.unet.to(device)
 
@@ -58,9 +64,10 @@ class DDIM(nn.Module):
         return out.reshape(batch_size, *((1,) * (len(x_shape) - 1))).to(t.device)
 
     def taus(self, step):
-        self.schedules(step)
-        ts = list(range(0, step))
-        return ts[:-1], ts[1:]
+        ts = torch.linspace(-1, self.steps-1, steps=step+1)
+        ts[0] = 0
+        ts = list(reversed(ts.int().tolist()))
+        return ts[1:], ts[:-1]
 
     @torch.no_grad()
     def p_epsilon(self, x, t):
@@ -84,22 +91,32 @@ class DDIM(nn.Module):
         )
         return (x - sqrt_one_minus_alphas_cumprod_t * noise) / sqrt_alphas_cumprod_t
 
-    def p_sample_loop(self, shape, step=1):
+    def p_sample_loop(self, shape, step=1, eta=1):
         b = shape[0]
         x = torch.randn(shape, device=self.device)
 
         imgs = []
         ts_prev, ts_curr = self.taus(step)
-        for t_prev, t_curr in zip(reversed(ts_prev), reversed(ts_curr)):
+        for t_prev, t_curr in zip(ts_prev, ts_curr):
             t = torch.full((b,), t_curr, device=self.device, dtype=torch.long)
             epsilon = self.p_epsilon(x, t)
-            x = self.predict_x0(x, t, epsilon)
-            x = torch.clip(x, -1, 1)
-            t = torch.full((b,), t_prev, device=self.device, dtype=torch.long)
-            x = self.forward_xt(x, t, epsilon)
+            x0 = self.predict_x0(x, t, epsilon)
+
+            alpha_curr = self.alphas_cumprod[t_curr]
+            alpha_prev = self.alphas_cumprod[t_prev]
+
+            sigma = eta * ((1 - alpha_curr / alpha_prev) * (1 - alpha_prev) / (1 - alpha_curr)).sqrt()
+            c = (1 - alpha_prev - sigma ** 2).sqrt()
+
+            if ts_prev == 0:
+                x = x0
+            else:
+                noise = torch.randn_like(x)
+                x = x0 * alpha_prev.sqrt() + c * epsilon + sigma * noise
+
             imgs.append(x.clone().cpu().numpy())
         return imgs
 
-    def sample(self, image_size, batch_size=16, step=1):
+    def sample(self, image_size, batch_size=16, step=1, eta=1):
         shape = (batch_size, self.channels, image_size, image_size)
-        return self.p_sample_loop(shape, step)
+        return self.p_sample_loop(shape, step=step, eta=eta)
