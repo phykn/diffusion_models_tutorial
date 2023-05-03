@@ -1,18 +1,30 @@
 ## Diffusion Models Tutorial
-Diffusion models are generative models which have recently been shown to produce excellent samples. This is a tutorial page for diffusion models. I'm going to update the background theory and example code here.
+Diffusion models in machine learning are a type of probabilistic generative model. Diffusion models are gaining attention due to their capacity to generate highly realistic images. It is also recognized for its exceptional performance in various fields such as text-to-image conversion, which converts text into images, image inpainting that replaces missing parts in an image, and super-resolution that enhances image quality. If you are interested in experimenting with diffusion models, you can try it out at https://stablediffusionweb.com
+
+To comprehend diffusion models, one must familiarize themselves with several complex equations. Even I struggled with it, and honestly, I am still learning. Therefore, in this tutorial page, I aim to organize what I have studied in a more accessible manner. I hope it will be beneficial to those studying diffusion models.
+
+This tutorial is divided into several parts. 
+1. **Part 1** provides a summary of the background knowledge necessary for working with diffusion models. It is beneficial for those who require prior knowledge of concepts such as expected values and ELBO to refer to.
+2. **Part 2** covers the fundamentals of diffusion models, including the forward and reverse process concepts. Additionally, we will implement diffusion models based on what we have learned so far in this section.
+3. Diffusion models are known for their ability to generate high-quality images, but they require hundreds to thousands of samples, resulting in time-consuming problems. To tackle this issue, several methods have been proposed. **Part 3** of this tutorial focuses on DDIM, which was the initial approach proposed to address these problems.
+
+In this tutorial, we will also introduce a more advanced sampling method.
 
 ## Table of contents
 ||Title|LINK|Update|
 |---|---|---|---|
-|01|Expectation and variance|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/01_expectation_and_variance.ipynb)|22.12.14|
-|02|Reparameterization trick|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/02_reparameterization_trick.ipynb)|22.12.14|
-|03|Kullback–Leibler divergence|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/03_kl_divergence.ipynb)|22.12.14|
-|04|Evidence lower bound|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/04_elbo.ipynb)|22.12.14|
-|05|Forward and reverse process|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/05_forward_and_reverse.ipynb)|22.12.14|
-|06|Noise schedule|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/06_noise_schedule.ipynb)|22.12.14|
-|07|DDIM|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/07_ddim.ipynb)|22.12.23|
-|08|Example: DDPM|[LINK](https://github.com/phykn/diffusion_models_tutorial/tree/main/01_example/ddpm)|22.12.19|
-|09|Example: DDIM|[LINK](https://github.com/phykn/diffusion_models_tutorial/tree/main/01_example/ddim)|22.12.23|
+||**PART 1. Background**|
+|1|Expectation and variance|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/01_expectation_and_variance.ipynb)|22.12.14|
+|2|Reparameterization trick|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/02_reparameterization_trick.ipynb)|22.12.14|
+|3|Kullback–Leibler divergence|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/03_kl_divergence.ipynb)|22.12.14|
+|4|Evidence lower bound|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/04_elbo.ipynb)|22.12.14|
+||**PART 2. Diffusion Models**|
+|1|Forward and reverse process|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/05_forward_and_reverse.ipynb)|22.12.14|
+|2|Noise schedule|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/06_noise_schedule.ipynb)|22.12.14|
+|3|Example: DDPM|[LINK](https://github.com/phykn/diffusion_models_tutorial/tree/main/01_example/ddpm)|22.12.19|
+||**PART 3. DDIM**|
+|1|DDIM|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/07_ddim.ipynb)|22.12.23|
+|2|Example: DDIM|[LINK](https://github.com/phykn/diffusion_models_tutorial/tree/main/01_example/ddim)|22.12.23|
 
 ## References
 1. [Expected value](https://en.wikipedia.org/wiki/Expected_value) (Wikipedia)
