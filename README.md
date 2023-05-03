@@ -14,7 +14,7 @@ In this tutorial, we will also introduce a more advanced sampling method.
 ||Title|LINK|Update|
 |---|---|---|---|
 ||**PART 1. Background**|
-|1|Expectation and variance|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/01_expectation_and_variance.ipynb)|22.12.14|
+|1|Expectation and variance|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/expectation_and_variance.ipynb)|23.05.03|
 |2|Reparameterization trick|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/02_reparameterization_trick.ipynb)|22.12.14|
 |3|Kullback–Leibler divergence|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/03_kl_divergence.ipynb)|22.12.14|
 |4|Evidence lower bound|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/04_elbo.ipynb)|22.12.14|
