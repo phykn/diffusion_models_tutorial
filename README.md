@@ -14,16 +14,16 @@ In this tutorial, we will also introduce a more advanced sampling method.
 ||Title|LINK|Update|
 |---|---|---|---|
 ||**PART 1. Background**|
-|1|Expectation and variance|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/01_expectation_and_variance.ipynb)|22.12.14|
-|2|Reparameterization trick|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/02_reparameterization_trick.ipynb)|22.12.14|
-|3|Kullback–Leibler divergence|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/03_kl_divergence.ipynb)|22.12.14|
-|4|Evidence lower bound|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/04_elbo.ipynb)|22.12.14|
+|1|Expectation and variance|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/01_expectation_and_variance.ipynb)|22.12.14|
+|2|Reparameterization trick|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/02_reparameterization_trick.ipynb)|22.12.14|
+|3|Kullback–Leibler divergence|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/03_kl_divergence.ipynb)|22.12.14|
+|4|Evidence lower bound|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/04_elbo.ipynb)|22.12.14|
 ||**PART 2. Diffusion Models**|
-|1|Forward and reverse process|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/05_forward_and_reverse.ipynb)|22.12.14|
-|2|Noise schedule|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/06_noise_schedule.ipynb)|22.12.14|
+|1|Forward and reverse process|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/05_forward_and_reverse.ipynb)|22.12.14|
+|2|Noise schedule|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/06_noise_schedule.ipynb)|22.12.14|
 |3|Example: DDPM|[LINK](https://github.com/phykn/diffusion_models_tutorial/tree/main/01_example/ddpm)|22.12.19|
 ||**PART 3. DDIM**|
-|1|DDIM|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/00_background/07_ddim.ipynb)|22.12.23|
+|1|DDIM|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/07_ddim.ipynb)|22.12.23|
 |2|Example: DDIM|[LINK](https://github.com/phykn/diffusion_models_tutorial/tree/main/01_example/ddim)|22.12.23|
 
 ## References
