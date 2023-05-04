@@ -19,9 +19,10 @@ In this tutorial, we will also introduce a more advanced sampling method.
 |3|Kullback–Leibler divergence|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/kl_divergence.ipynb)|23.05.03|
 |4|Evidence lower bound|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/elbo.ipynb)|23.05.03|
 ||**PART 2. Diffusion Models**|
-|1|Forward and reverse process|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/05_forward_and_reverse.ipynb)|22.12.14|
-|2|Noise schedule|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/06_noise_schedule.ipynb)|22.12.14|
-|3|Example: DDPM|[LINK](https://github.com/phykn/diffusion_models_tutorial/tree/main/01_example/ddpm)|22.12.19|
+|1|Forward and reverse process|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/introduction_to_diffusion_models.ipynb)|23.05.04|
+|2|Forward and reverse process|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/05_forward_and_reverse.ipynb)|22.12.14|
+|3|Noise schedule|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/06_noise_schedule.ipynb)|22.12.14|
+|4|Example: DDPM|[LINK](https://github.com/phykn/diffusion_models_tutorial/tree/main/01_example/ddpm)|22.12.19|
 ||**PART 3. DDIM**|
 |1|DDIM|[LINK](https://nbviewer.org/github/phykn/diffusion_models_tutorial/blob/main/notebooks/07_ddim.ipynb)|22.12.23|
 |2|Example: DDIM|[LINK](https://github.com/phykn/diffusion_models_tutorial/tree/main/01_example/ddim)|22.12.23|
